@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root{--primary:#9966CC;}
+
+body{
+  font-family:'Inter',sans-serif;
+  display:flex;flex-direction:column;min-height:100vh;
+  background:#F7F7F7;color:#1E1E1E;
+}
+header{
+  background:#fff;padding:1rem 2rem;box-shadow:0 1px 4px #0001;
+}
+header .back{
+  color:var(--primary);
+  font-weight:600;
+  text-decoration:none;
+  transition:opacity .2s;
+}
+header .back:hover{opacity:.8;}
+
+main{
+  flex:1;max-width:600px;margin:auto;padding:2rem;background:#fff;
+  border-radius:12px;box-shadow:0 4px 12px #0001;
+  animation:fadeIn .6s ease-in;
+}
+
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(12px);}
+  to{opacity:1;transform:translateY(0);}
+}
+
+main h1{
+  color:var(--primary);
+  font-size:1.8rem;
+  text-align:center;
+  margin-bottom:.5rem;
+}
+main p{
+  font-size:1.1rem;
+  line-height:1.6;
+  text-align:center;
+  margin-top:1rem;   /* add margin for breathing room */
+}
+
+.contact-email{
+  color:var(--primary);
+  font-weight:600;
+  text-decoration:none;
+}
+.contact-email:hover{opacity:.8;}

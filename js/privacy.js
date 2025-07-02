@@ -1,0 +1,1 @@
+// Página de privacidad sin scripts por ahora.
